@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: url(../public/bg1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.todo-list-container {
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  width: 50vw;
+  padding: 48px;
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  background-color: #dfd7c6;
+  border-radius: 64px;
+}
+.todo-list {
+  overflow-y: scroll;
+}
+.counter {
+  display: flex;
+  flex-direction: row;
+  padding-top: 16px;
+  justify-content: space-between;
+  font-family: "Century Gothic";
+}
+
+.todo-in input {
+  width: 70%;
+  padding: 4px;
+  font-family: "Century Gothic";
+}
+.todo-in button {
+  width: 30%;
+  padding: 3px 0 5px 0;
+  background-color: #aba290;
+  font-family: "Century Gothic";
+  font-weight: bold;
+}
+.todo-in {
+  padding-bottom: 8px;
+}
+
+.todo-box {
+  display: flex;
+  flex-direction: row;
+  padding-top: 4px;
+  padding-left: 10px;
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
+.todo {
+  width: 80%;
+  text-indent: -10px;
+  word-wrap: break-word;
+}
+
+.delete-btn {
+  display: none;
+  width: 20%;
+  height: fit-content;
+  font-family: "Century Gothic";
+  background-color: rgb(81, 147, 125);
+}
+
+.todo-box:hover .delete-btn {
+  display: flex;
+  justify-content: center;
+}
+
+.done {
+  color: rgb(139, 139, 139);
+  text-decoration: line-through;
+}
+
+.loading {
+  justify-content: center;
+  align-items: center;
+}
+.img-loading {
+  width: 100px;
+  height: 100px;
+}
